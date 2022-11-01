@@ -1,6 +1,5 @@
 # Assignment-allinaz
-# Canvas
-#Draw on canvas
+
 MERN Stack
 
 ## Table of contents
