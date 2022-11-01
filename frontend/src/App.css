@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.alphabets,.operators{
+  display: flex;
+  overflow-x: scroll;
+}
+.alphabet-box,.operator-box,.comparator-box,.rhs{
+  align-items: center;
+  background-color: #9acd32;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  cursor: move;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-weight: bolder;
+  height: 100px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+}
+.operator-box,.comparator-box,.rhs{
+  background-color: #bc8f8f;
+  height: 50px;
+ 
+}
+.comparator-box,.rhs{
+  cursor: pointer;
+}
+.space{
+  width: 50px;
+}
+.canvas{
+  align-items: center;
+  border: 5px dashed grey;
+  display: flex;
+  height: 150px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.submit{
+  background-color: #6495ed;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.remove{
+  align-items: center;
+  color: #fff;
+  display: flex;
+  height: 15px;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 15px;
+}
+.close {
+  margin: 0px 0px 123px 84px;
+  cursor: pointer;
+  position: absolute;
+  
+}
+.close::after{
+  position: absolute;
+  content: "\d7";
+  font-size: 24px;
+  text-align: center;
+  color: rgb(106, 106, 106);
+}
+.close:hover{
+  color: #9acd32;
+}
+.canvas>.comparator, .canvas>.alphabet-box, .canvas>.operator-box, .canvas>.rhs {
+  cursor: pointer;
+  position: relative;
+}
